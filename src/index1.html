@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>This is a title</title>
+  <style>
+    body {
+      background: #FFFFFF;
+      font-size: 12pt;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .clr {
+      clear: both;
+    }
+
+    .invoice-title {
+      font-size: 14pt;
+      color: #734B3A;
+      margin: 25px 0 15px 0;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th {
+      text-align: left;
+      border-bottom: 1px solid #EEE;
+    }
+
+    .variation {
+      font-size: 11px;
+    }
+
+    #main_container {
+      width: 100%;
+      margin: 0 0 30px 0;
+    }
+
+    #main {
+      width: 720px;
+      margin: auto;
+    }
+
+    #main .header_logo {
+      text-align: right;
+      margin: 15px 0 15px 0;
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #main .wrapper {
+      border: 1px solid #EFECDC;
+      background-color: #FFFFFF;
+    }
+
+    #main .wrapper-table {
+      margin: 0 0 0 0;
+      padding: 25px 25px 25px 25px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .short_cell {
+      width: 90px;
+    }
+
+    @media all {
+      .page-break {
+        display: none;
+      }
+    }
+
+    @media print {
+      .page-break {
+        display: block;
+        page-break-before: always;
+      }
+      .table {
+        page-break-before: always;
+      }
+
+      .noprint {
+        display: none;
+      }
+    }
+
+    body {
+      margin-top: 145px;
+    }
+
+    #main .header_logo {
+      font-family: 'Sacramento', cursive;
+      color: #D79E32;
+      font-size: 3.5em;
+      font-weight: normal;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      padding-top: 90px;
+      line-height: 0.6em;
+      padding-bottom: 10px;
+      border-bottom: #ade6df solid 10px;
+      position: fixed;
+      top: 0;
+      width: 715px;
+      background-color: #fff
+    }
+
+    #main .header_logo img {
+      max-height: 120px;
+      max-width: 120px;
+      float: left;
+      margin-top: -85px;
+    }
+
+    #main .wrapper {
+      border: none;
+    }
+
+    .footer {
+      background: #ade6df;
+      color: #fff;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      padding: 5px 0;
+      font-weight: 300;
+      /* #position: fixed; */
+      bottom: 0;
+      width: 715px;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer .spacer {
+      font-size: 0.5em;
+      padding: 0 10px;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+    }
+
+    .page-break {
+      height: 215px;
+      width: 100%;
+    }
+
+    .page-break:last-child {
+      display: none;
+    }
+
+    @media screen {
+      .footer {
+        bottom: 20px;
+      }
+
+      body {
+        margin-bottom: 30px;
+      }
+    }
+    .table {
+      border: 1px solid #cccccc78;
+    }
+
+    .form-group {
+      display: inline-block;
+      width: 31%;
+    }
+
+    .form-group-inline {
+      display: inline-block;
+      width: 10%;
+    }
+
+    .form-group-inline input {
+      width: 50px;
+    }
+
+    .color-primary {
+      color: #1f6fc0;
+    }
+
+    .color-dark {
+      color: #000000;
+    }
+
+    .color-danger {
+      color: #ed3833;
+    }
+
+    .header {
+      font-size: xx-large;
+    }
+
+    .sub-header {
+      font-size: larger
+    }
+
+    .sub-title {
+      font-size: large
+    }
+
+    .text-primary {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div style="main_container">
+    <div id="main">
+
+      <div class="header_logo">
+        STEADY STEPS SCHOOLS
+      </div>
+      <!-- <div class="clr"></div> -->
+
+      <div class="wrapper">
+        <div class="wrapper-table">
+          <table class="table" cellpadding="5" cellspacing="0" border="1">
+            <tr>
+              <td style="width: 215px">
+                <h2 class="color-primary header">The Explorer 1</h2>
+                <h4 class="color-dark sub-header">Progress Report</h4>
+              </td>
+              <td>
+                <h2 class="color-dark header">First Term 2019/2020 Academic Session</h2>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <h3 class="sub-title"><span class="color-danger">Child’s Name:</span> Osi Oshomah</h3>
+                <h3 class="sub-title"><span class="color-danger">Age Range:</span> 2-3 Years</h3>
+                <h3 class="sub-title"><span class="color-danger">Teachers:</span> Ms Blessing, Ms Rita, Ms Victoria.</h3>
+                <h3 class="sub-title"><span class="color-danger">EXPLANATORY NOTES:</span> <small class="text-primary">information contained in this report provides a summary of your child’s
+                    early learning goals as attained through the year on a termly basis. This report measures third
+                    term’s progress.</small> </h3>
+                <h3 class="sub-title"><span class="color-danger"> LEARNING AREAS ASSESSMENT:</span> <small class="text-primary">Categorizes your child’s progress into, <a href="#"> – BELOW EXPECTATION, P
+                    – PROGRESSING TOWARDS EXPECTATION, M – MEETING EXPECTATION, E – EXCEEDING EXPECTATION</a></small></h3>
+                <h3 class="sub-title color-danger">Identifying Parts of body</h3>
+                <p>Your child is able to identify (touch or say) the following parts of the body correctly as ticked in
+                  the boxes below.</p>
+                <div>
+                  <div class="form-group">
+                    <label for="Head">
+                      <input type="checkbox" name="head" id="head">
+                      Head
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Nose">
+                      <input type="checkbox" name="Nose" id="Nose">
+                      Nose
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Cheek">
+                      <input type="checkbox" name="Cheek" id="Cheek">
+                      Cheek
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Eyes">
+                      <input type="checkbox" name="Eyes" id="Eyes">
+                      Eyes
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Shoulders">
+                      <input type="checkbox" name="Shoulders" id="Shoulders">
+                      Shoulders
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Toes">
+                      <input type="checkbox" name="Toes" id="Toes">
+                      Toes
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Ears">
+                      <input type="checkbox" name="Ears" id="Ears">
+                      Ears
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Chin">
+                      <input type="checkbox" name="Chin" id="Chin">
+                      Chin
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Legs">
+                      <input type="checkbox" name="Legs" id="Legs">
+                      Legs
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Thighs">
+                      <input type="checkbox" name="Thighs" id="Thighs">
+                      Thighs
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Knees">
+                      <input type="checkbox" name="Knees" id="Knees">
+                      Knees
+                    </label>
+                  </div>
+                </div>
+                <h3 class="sub-title color-danger">Identifying fruits and vegetables</h3>
+                <p>I asked your child to identify the following fruits and vegetables and they identified correctly as
+                  ticked in the boxes below.</p>
+                <div>
+                  <div class="form-group">
+                    <label for="Apples">
+                      <input type="checkbox" name="Apples" id="Apples">
+                      Apples
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Grapes">
+                      <input type="checkbox" name="Grapes" id="Grapes">
+                      Grapes
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Orange">
+                      <input type="checkbox" name="Orange" id="Orange">
+                      Orange
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Banana">
+                      <input type="checkbox" name="Banana" id="Banana">
+                      Banana
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Cucumber">
+                      <input type="checkbox" name="Cucumber" id="Cucumber">
+                      Cucumber
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Pepper">
+                      <input type="checkbox" name="Pepper" id="Pepper">
+                      Pepper
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Watermelon">
+                      <input type="checkbox" name="Watermelon" id="Watermelon">
+                      Watermelon
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Potato">
+                      <input type="checkbox" name="Potato" id="Potato">
+                      Potato
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Cabbage">
+                      <input type="checkbox" name="Cabbage" id="Cabbage">
+                      Cabbage
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Carrot">
+                      <input type="checkbox" name="Carrot" id="Carrot">
+                      Carrot
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="Corn">
+                      <input type="checkbox" name="Corn" id="Corn">
+                      Corn
+                    </label>
+                  </div>
+                </div>
+                
+              </td>
+            </tr>
+          </table>
+          <table cellpadding="5" cellspacing="0" border="1" class="table" style="margin-top:150px;">
+            <tr>
+              <td>
+                  <h3 class="sub-title color-danger">Identifying shapes and colors</h3>
+                  <p>I asked your child to identify all the shapes and colours below and they identified correctly as
+                    checked in the boxes beside each shape or colour.</p>
+                  <h4>2D Shapes:</h4>
+                  <div>
+                    <div class="form-group-inline">
+                      <p>Square</p>
+                      <div>
+                        <input type="text" name="Square" id="Square">
+                      </div>
+                    </div>
+                    <div class="form-group-inline">
+                      <p>Star</p>
+                      <div>
+                        <input type="text" name="Star" id="Star">
+                      </div>
+                    </div>
+                    <div class="form-group-inline">
+                      <p>Oval</p>
+                      <div>
+                        <input type="text" name="Oval" id="Oval">
+                      </div>
+                    </div>
+                    <div class="form-group-inline">
+                      <p>Love</p>
+                      <div>
+                        <input type="text" name="Love" id="Love">
+                      </div>
+                    </div>
+                    <div class="form-group-inline">
+                      <p>Rectangle</p>
+                      <div>
+                        <input type="text" name="Rectangle" id="Rectangle">
+                      </div>
+                    </div>
+                    <div class="form-group-inline">
+                      <p>Circle</p>
+                      <div>
+                        <input type="text" name="Circle" id="Circle">
+                      </div>
+                    </div>
+                    <div class="form-group-inline">
+                      <p>Triangle</p>
+                      <div>
+                        <input type="text" name="Triangle" id="Triangle">
+                      </div>
+                    </div>
+                  </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="footer">
+        My company<span class="spacer">&#9679;</span><a href="#" target="_blank">mycompany.com</a><span class="spacer">&#9679;</span>888-111-1234<span
+          class="spacer">&#9679;</span><a href="mailto:info@mycompany.com">info@mycompany.com</a>
+      </div>
+
+    </div>
+  </div>
+  <div class="page-break"></div>
+
+</body>
+
+</html>
